@@ -1,0 +1,8 @@
+baseURL = "https://kh-best-hair-voso-ram-prog.netlify.app/"
+languageCode = "zh-tw"
+title = "高雄美髮推薦｜VOSO HAIR & RAM STUDIO 專業縮毛矯正與燙染設計"
+theme = "ananke"
+
+[params]
+  description = "高雄專業美髮沙龍 VOSO 與 RAM，擅長女生剪髮、短髮、女生燙髮、女生染髮、手刷挑染、一刀切、縮毛矯正、男士燙髮與韓式設計。高雄在地美髮品牌首選。"
+  address = "高雄市左營區裕誠路 / 高雄市左營區南屏路"
