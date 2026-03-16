@@ -1,0 +1,6 @@
+name = "voso-ram-theme"
+license = "MIT"
+description = "Boutique salon SEO theme"
+homepage = "https://voso.com.tw"
+tags = ["hair", "salon", "seo"]
+features = ["blog"]
