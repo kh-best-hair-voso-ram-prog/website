@@ -3,29 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VOSO HAIR & RAM STUDIO｜高雄精品美髮沙龍</title>
-</head>
-<body style="font-family: 'PingFang TC', sans-serif; color: #333; line-height: 1.8; max-width: 800px; margin: 0 auto; padding: 40px 20px; background-color: #fafafa;">
-    <header style="border-bottom: 2px solid #333; padding-bottom: 20px; margin-bottom: 30px; text-align: center;">
-        <h1 style="letter-spacing: 4px; margin-bottom: 5px; font-size: 1.8em;">專業美學 · 質感髮型設計</h1>
-        <p style="color: #888; font-size: 1em; margin-top: 0; letter-spacing: 1px;">VOSO HAIR SALON & RAM STUDIO</p >
-    </header>
-
-    <section style="background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <p>歡迎來到設計師 <strong>David</strong> 的官方頻道。我們致力於將每一位客人的髮絲視為藝術品，為您打造專屬的美學風格。</p >
+    <title>VOSO HAIR SALON & RAM HAIR STUDIO｜高雄精品美髮美學</title>
+    <style>
+        :root { --main-bg: #ffffff; --accent: #111111; --gold: #a68a56; --gray: #f2f2f2; }
+        body { font-family: "PingFang TC", "Helvetica Neue", sans-serif; margin: 0; color: #1a1a1a; background: var(--main-bg); line-height: 1.8; -webkit-font-smoothing: antialiased; }
         
-        <h3 style="color: #222; border-left: 5px solid #333; padding-left: 15px; margin-top: 35px; font-size: 1.3em;">服務核心</h3>
-        <ul style="list-style-type: none; padding-left: 5px;">
-            <li style="margin-bottom: 15px;">✨ <strong>縮毛矯正系列</strong><br><span style="color: #666; font-size: 0.95em;">打造自然、柔順、具綢緞光澤的完美髮質。</span></li>
-            <li style="margin-bottom: 15px;">✂️ <strong>男士風格設計</strong><br><span style="color: #666; font-size: 0.95em;">結合頭型結構，設計好整理且俐落的造型。</span></li>
-            <li style="margin-bottom: 15px;">🎨 <strong>精品燙染服務</strong><br><span style="color: #666; font-size: 0.95em;">選用頂級藥劑，確保髮質健康的同時呈現純粹色澤。</span></li>
-        </ul>
-    </section>
+        /* 側邊預約列 */
+        .side-booking { position: fixed; right: 20px; top: 50%; transform: translateY(-50%); z-index: 9999; display: flex; flex-direction: column; gap: 15px; }
+        .side-item { width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.15); transition: 0.3s; text-decoration: none; border: 1px solid #eee; }
+        .side-item:hover { transform: scale(1.1); box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
+        .side-item img { width: 28px; height: 28px; }
+        .side-label { position: absolute; right: 60px; background: var(--accent); color: white; padding: 5px 12px; border-radius: 4px; font-size: 12px; white-space: nowrap; opacity: 0; transition: 0.3s; pointer-events: none; }
+        .side-item:hover .side-label { opacity: 1; right: 65px; }
 
-    <footer style="margin-top: 50px; padding: 20px; border-top: 1px solid #eee; font-size: 0.95em; color: #555;">
-        <p><strong>立即預約體驗：</strong></p >
-        <p style="margin: 5px 0;">📍 <strong>VOSO HAIR SALON</strong>：高雄市左營區裕誠路 280 號</p >
-        <p style="margin: 5px 0;">📍 <strong>RAM STUDIO</strong>：高雄市鼓山區南屏路 266 號</p >
-    </footer>
+        /* 導航 */
+        nav { padding: 30px 5%; display: flex; justify-content: center; border-bottom: 1px solid #f2f2f2; background: white; position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 1.4em; letter-spacing: 6px; font-weight: 300; text-align: center; }
+
+        /* Banner */
+        .hero { height: 75vh; background: #000; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+        .hero-video-placeholder { width: 100%; height: 100%; object-fit: cover; opacity: 0.6; background: url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat; }
+        .hero-text { position: absolute; color: white; text-align: center; }
+        .hero-text h2 { font-size: 3em; font-weight: 200; letter-spacing: 10px; margin: 0; }
+        .hero-text p { font-size: 0.9em; letter-spacing: 5px; margin-top: 15px; color: rgba(255,255,255,0.7); }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 100px 20px; }
+
+        /* 分店導引 */
+        .store-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 120px; }
+        .store-card { padding: 40px; border: 1px solid #eee; transition: 0.4s; text-align: center; }
+        .store-card:hover { border-color: var(--gold); background: #fafafa; }
+        .store-card h3 { font-size: 1.5em; letter-spacing: 3px; margin-bottom: 20px; }
+        .store-link { text-decoration: none; color: var(--gold); font-size: 0.8em; border-bottom: 1px solid var(--gold); padding-bottom: 3px; margin: 0 10px; }
+
+        /* 文章作品區 */
+        .section-title { font-size: 1.8em; letter-spacing: 4px; text-align: center; margin-bottom: 60px; position: relative; }
+        .section-title::after { content: ''; display: block; width: 40px; height: 1px; background: var(--gold); margin: 20px auto; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; }
+        .news-item { text-decoration: none; color: inherit; overflow: hidden; }
+        .news-img { width: 100%; aspect-ratio: 4/3; background: var(--gray); overflow: hidden; transition: 0.6s ease; }
+        .news-img:hover img { transform: scale(1.05); }
+        .news-item h4 { font-size: 1.1em; margin: 20px 0 10px; font-weight: 500; }
+        .news-item p { font-size: 0.85em; color: #888; margin: 0; }
+
+        footer { background: #000; color: white; padding: 80px 5%; text-align: center; }
+        .footer-logo { font-size: 1.2em; letter-spacing: 5px; margin-bottom: 30px; }
+        .footer-info { font-size: 0.85em; color: #888; line-height: 2.5; }
+
+        @media (max-width: 768px) { .store-grid { grid-template-columns: 1fr; } .hero-text h2 { font-size: 2em; } }
+    </style>
+</head>
+<body>
+
+<!-- 側邊常駐預約列 -->
+<div class="side-booking">
+    <a href=" " class="side-item" target="_blank">
+        <span class="side-label">VOSO 預約</span>
+        < img src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" alt="LINE">
+    </a >
+    <a href="https://lin.ee/VF6IZ0t" class="side-item" target="_blank">
+        <span class="side-label">RAM 預約</span>
+        < img src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" alt="LINE">
+    </a >
+</div>
+
+<nav>
+    <div class="logo">VOSO HAIR · RAM STUDIO</div>
+</nav>
+
+<div class="hero">
+    <div class="hero-video-placeholder"></div>
+    <div class="hero-text">
+        <p>REFINING YOUR STYLE</p >
+        <h2>髮絲美學 · 職人精神</h2>
+    </div>
+</div>
+
+<div class="container">
+    <!-- 分店導覽 -->
+    <div class="store-grid">
+        <div class="store-card">
+            <h3>VOSO HAIR</h3>
+            <p style="font-size: 0.9em; color: #666; margin-bottom: 25px;">質感日常 ‧ 高端縮毛矯正首選</p >
+            <a href="https://www.instagram.com/vosohair" class="store-link" target="_blank">INSTAGRAM</a >
+            <a href="https://lin.ee/67mgyY4" class="store-link" target="_blank">LINE BOOKING</a >
+        </div>
+        <div class="store-card">
+            <h3>RAM STUDIO</h3>
+            <p style="font-size: 0.9em; color: #666; margin-bottom: 25px;">前衛品味 ‧ 歐美燙染美學中心</p >
+            <a href="https://www.instagram.com/ram.hairstudio" class="store-link" target="_blank">INSTAGRAM</a >
+            <a href="https://lin.ee/VF6IZ0t" class="store-link" target="_blank">LINE BOOKING</a >
+        </div>
+    </div>
+
+    <!-- 作品誌 -->
+    <h3 class="section-title">THE WORKS</h3>
+    <div class="news-grid">
+        <a href="這裡放痞客邦連結" class="news-item">
+            <div class="news-img"><div style="height:100%; display:flex; align-items:center; justify-content:center; color:#ccc;">IMAGE</div></div>
+            <h4>【質感誌】極致柔順：高階縮毛矯正案例</h4>
+            <p>了解如何讓毛躁髮質重現緞面光澤...</p >
+        </a >
+        <a href="這裡放痞客邦連結" class="news-item">
+            <div class="news-img"><div style="height:100%; display:flex; align-items:center; justify-content:center; color:#ccc;">IMAGE</div></div>
+            <h4>【風格論】2026 男士俐落短髮設計</h4>
+            <p>針對不同頭型的精準剪裁與整理秘訣...</p >
+        </a >
+        <a href="這裡放痞客邦連結" class="news-item">
+            <div class="news-img"><div style="height:100%; display:flex; align-items:center; justify-content:center; color:#ccc;">IMAGE</div></div>
+            <h4>【色彩誌】精品通透感：燙染美學解析</h4>
+            <p>調配最適合東方肌膚的透亮髮色...</p >
+        </a >
+    </div>
+</div>
+
+<footer>
+    <div class="footer-logo">VOSO & RAM</div>
+    <div class="footer-info">
+        📍 <strong>VOSO HAIR SALON</strong>：高雄市左營區裕誠路 280 號<br>
+        📍 <strong>RAM HAIR STUDIO</strong>：高雄市鼓山區南屏路 266 號<br>
+        © 2026 VOSO HAIR & RAM STUDIO. DESIGN BY DAVID.
+    </div>
+</footer>
+
 </body>
 </html>
