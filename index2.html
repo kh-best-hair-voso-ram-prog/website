@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOSO HAIR SALON & RAM HAIR STUDIO｜高雄精品美髮美學</title>
+    <style>
+        :root { --main-bg: #ffffff; --accent: #111111; --gold: #a68a56; --gray: #f2f2f2; }
+        body { font-family: "PingFang TC", "Helvetica Neue", sans-serif; margin: 0; color: #1a1a1a; background: var(--main-bg); line-height: 1.8; -webkit-font-smoothing: antialiased; }
+        
+        /* 側邊常駐預約列 - 核心修復區塊 */
+        .side-booking { position: fixed; right: 20px; top: 50%; transform: translateY(-50%); z-index: 9999; display: flex; flex-direction: column; gap: 15px; }
+        .side-item { width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.15); transition: 0.3s; text-decoration: none; border: 1px solid #eee; position: relative; }
+        .side-item:hover { transform: scale(1.1); box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
+        .side-item img { width: 32px; height: 32px; display: block; border: none; }
+        
+        /* 懸浮標籤 */
+        .side-label { position: absolute; right: 70px; background: var(--accent); color: white; padding: 6px 14px; border-radius: 4px; font-size: 13px; white-space: nowrap; opacity: 0; transition: 0.3s; pointer-events: none; }
+        .side-item:hover .side-label { opacity: 1; right: 75px; }
+
+        /* 導航 */
+        nav { padding: 25px 5%; display: flex; justify-content: center; border-bottom: 1px solid #f2f2f2; background: white; position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 1.4em; letter-spacing: 6px; font-weight: 300; text-align: center; color: #000; }
+
+        /* Banner */
+        .hero { height: 75vh; background: #000; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+        .hero-img { width: 100%; height: 100%; object-fit: cover; opacity: 0.65; background-image: url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1200&q=80'); background-position: center; background-size: cover; }
+        .hero-text { position: absolute; color: white; text-align: center; }
+        .hero-text h2 { font-size: 3.2em; font-weight: 200; letter-spacing: 12px; margin: 0; text-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+        .hero-text p { font-size: 0.9em; letter-spacing: 6px; margin-top: 15px; color: rgba(255,255,255,0.8); }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 100px 20px; }
+
+        /* 分店導引 */
+        .store-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 120px; }
+        .store-card { padding: 50px 30px; border: 1px solid #eee; transition: 0.4s; text-align: center; border-radius: 2px; }
+        .store-card:hover { border-color: var(--gold); background: #fafafa; transform: translateY(-3px); }
+        .store-card h3 { font-size: 1.6em; letter-spacing: 4px; margin-bottom: 20px; color: #111; }
+        .store-links { margin-top: 25px; }
+        .store-link { text-decoration: none; color: var(--gold); font-size: 0.85em; border-bottom: 1px solid var(--gold); padding-bottom: 2px; margin: 0 15px; letter-spacing: 1px; transition: 0.3s; }
+        .store-link:hover { color: #000; border-color: #000; }
+
+        /* 文章作品區 */
+        .section-title { font-size: 1.8em; letter-spacing: 5px; text-align: center; margin-bottom: 60px; position: relative; font-weight: 500; }
+        .section-title::after { content: ''; display: block; width: 35px; height: 2px; background: var(--gold); margin: 25px auto; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; }
+        .news-item { text-decoration: none; color: inherit; display: block; }
+        .news-img { width: 100%; aspect-ratio: 16/10; background: var(--gray); overflow: hidden; position: relative; transition: 0.4s; }
+        .news-img:hover { transform: scale(1.02); }
+        .news-img .placeholder { height: 100%; display: flex; align-items: center; justify-content: center; color: #bbb; font-size: 0.9em; letter-spacing: 2px; }
+        .news-item h4 {
