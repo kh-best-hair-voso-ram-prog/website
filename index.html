@@ -8,11 +8,11 @@
         :root { --main-bg: #ffffff; --accent: #111111; --gold: #a68a56; --gray: #f2f2f2; }
         body { font-family: "PingFang TC", "Helvetica Neue", sans-serif; margin: 0; color: #1a1a1a; background: var(--main-bg); line-height: 1.8; -webkit-font-smoothing: antialiased; }
         
-        /* 側邊常駐預約列 */
-        .side-booking { position: fixed; right: 20px; top: 55%; transform: translateY(-50%); z-index: 9999; display: flex; flex-direction: column; gap: 15px; }
+        /* 側邊常駐預約列 - 核心修復區塊 */
+        .side-booking { position: fixed; right: 20px; top: 50%; transform: translateY(-50%); z-index: 9999; display: flex; flex-direction: column; gap: 15px; }
         .side-item { width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.15); transition: 0.3s; text-decoration: none; border: 1px solid #eee; position: relative; }
         .side-item:hover { transform: scale(1.1); box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
-        .side-item img { width: 32px; height: 32px; display: block; }
+        .side-item img { width: 32px; height: 32px; display: block; border: none; }
         
         /* 懸浮標籤 */
         .side-label { position: absolute; right: 70px; background: var(--accent); color: white; padding: 6px 14px; border-radius: 4px; font-size: 13px; white-space: nowrap; opacity: 0; transition: 0.3s; pointer-events: none; }
@@ -26,7 +26,7 @@
         .hero { height: 75vh; background: #000; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
         .hero-img { width: 100%; height: 100%; object-fit: cover; opacity: 0.65; background-image: url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1200&q=80'); background-position: center; background-size: cover; }
         .hero-text { position: absolute; color: white; text-align: center; }
-        .hero-text h2 { font-size: 3.2em; font-weight: 200; letter-spacing: 12px; margin: 0; }
+        .hero-text h2 { font-size: 3.2em; font-weight: 200; letter-spacing: 12px; margin: 0; text-shadow: 0 2px 10px rgba(0,0,0,0.3); }
         .hero-text p { font-size: 0.9em; letter-spacing: 6px; margin-top: 15px; color: rgba(255,255,255,0.8); }
 
         .container { max-width: 1100px; margin: 0 auto; padding: 100px 20px; }
@@ -40,64 +40,12 @@
         .store-link { text-decoration: none; color: var(--gold); font-size: 0.85em; border-bottom: 1px solid var(--gold); padding-bottom: 2px; margin: 0 15px; letter-spacing: 1px; transition: 0.3s; }
         .store-link:hover { color: #000; border-color: #000; }
 
-        /* 作品區標題 */
+        /* 文章作品區 */
         .section-title { font-size: 1.8em; letter-spacing: 5px; text-align: center; margin-bottom: 60px; position: relative; font-weight: 500; }
         .section-title::after { content: ''; display: block; width: 35px; height: 2px; background: var(--gold); margin: 25px auto; }
-
-        /* 文章作品格 */
         .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; }
         .news-item { text-decoration: none; color: inherit; display: block; }
         .news-img { width: 100%; aspect-ratio: 16/10; background: var(--gray); overflow: hidden; position: relative; transition: 0.4s; }
         .news-img:hover { transform: scale(1.02); }
         .news-img .placeholder { height: 100%; display: flex; align-items: center; justify-content: center; color: #bbb; font-size: 0.9em; letter-spacing: 2px; }
-        .news-item h4 { font-size: 1.15em; margin: 25px 0 10px; font-weight: 600; letter-spacing: 1px; }
-        .news-item p { font-size: 0.85em; color: #777; margin: 0; }
-
-        /* 頁尾 */
-        footer { background: #000; color: white; padding: 100px 5%; text-align: center; }
-        .footer-logo { font-size: 1.4em; letter-spacing: 8px; margin-bottom: 40px; font-weight: 200; }
-        .footer-info { font-size: 0.9em; color: #999; line-height: 2.8; letter-spacing: 1px; }
-
-        @media (max-width: 768px) { 
-            .store-grid { grid-template-columns: 1fr; } 
-            .hero-text h2 { font-size: 2.2em; letter-spacing: 6px; }
-            .side-booking { right: 15px; }
-            .side-item { width: 48px; height: 48px; }
-            .side-item img { width: 26px; height: 26px; }
-        }
-    </style>
-</head>
-<body>
-
-<!-- 側邊常駐預約列 (LINE 圖示) -->
-<div class="side-booking">
-    <a href=" " class="side-item" target="_blank">
-        <span class="side-label">VOSO 預約</span>
-        < img src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" alt="LINE">
-    </a >
-    <a href="https://lin.ee/VF6IZ0t" class="side-item" target="_blank">
-        <span class="side-label">RAM 預約</span>
-        < img src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" alt="LINE">
-    </a >
-</div>
-
-<!-- 頂部導航 -->
-<nav>
-    <div class="logo">VOSO HAIR · RAM STUDIO</div>
-</nav>
-
-<!-- 主視覺 -->
-<div class="hero">
-    <div class="hero-img"></div>
-    <div class="hero-text">
-        <p>THE ART OF HAIR DESIGN</p >
-        <h2>美髮職人精神 · 生活質感美學</h2>
-    </div>
-</div>
-
-<div class="container">
-    <!-- 分店導覽區塊 -->
-    <div class="store-grid">
-        <div class="store-card">
-            <h3>VOSO HAIR</h3>
-            <p style="font
+        .news-item h4 {
