@@ -1,9 +1,3 @@
 [build]
   command = "hugo --gc --minify"
   publish = "public"
-
-[build.environment]
-  HUGO_VERSION = "0.128.0"
-  # 強制設定變數來覆蓋隱藏的 mise 設定
-  MISE_HUGO_EXTENDED_VERSION = "0.128.0"
-  MISE_YES = "1"
