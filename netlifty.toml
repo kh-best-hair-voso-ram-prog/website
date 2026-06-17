@@ -1,7 +1,0 @@
-[build]
-  command = "export MISE_HUGO_VERSION=0.128.0 && hugo --gc --minify"
-  publish = "public"
-
-[context.production.environment]
-  HUGO_VERSION = "0.128.0"
-  MISE_VERSION = "disabled"
