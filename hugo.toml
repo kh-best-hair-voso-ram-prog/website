@@ -1,1 +1,5 @@
-
+baseURL = "https://kaohsiung-rec-hairsalon-voso-ram.netlify.app/"
+languageCode = "zh-tw"
+title = "高雄VOSO & RAM美髮沙龍"
+publishDir = "public"
+theme = "voso-ram-theme"
