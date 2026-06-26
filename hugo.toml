@@ -1,7 +1,1 @@
-baseURL = "https://kaohsiung-rec-hairsalon-voso-ram.netlify.app/"
-languageCode = "zh-tw"
-title = "高雄VOSO HAIR & RAM HAIR 美髮沙龍官方網站"
-publishDir = "public"
-canonifyURLs = true
-# 主題關閉，因為沒有主題資料夾
-# theme = "voso-ram-theme"
+
