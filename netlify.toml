@@ -1,6 +1,1 @@
-[build]
-  command = "hugo"
-  publish = "public"
-
-[build.environment]
-  HUGO_VERSION = "0.129.0"
+移除netlify.toml，切換純靜態網站
