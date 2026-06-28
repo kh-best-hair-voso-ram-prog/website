@@ -1,0 +1,3 @@
+static/ = 第一層資料夾
+images/ = 內層圖片資料夾
+.gitkeep 是空白隱藏檔，GitHub 才會保留空資料夾
