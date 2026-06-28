@@ -1,0 +1,12 @@
+baseURL = "https://kaohsiung-rec-hairsalon-voso-ram.netlify.app/"
+title = "VOSO HAIR & RAM HAIR 高雄美髮沙龍"
+languageCode = "zh-tw"
+publishDir = "public"
+theme = "basic-blog"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[permalinks]
+  posts = "/posts/:title/"
