@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+<meta charset="UTF-8">
+<title>{{ .Title }} | {{ .Site.Title }}</title>
+</head>
+<body>
+<h1>{{ .Title }}</h1>
+<p>發布日期：{{ .Date.Format "2006-01-02" }}</p>
+<hr>
+{{ .Content }}
+<p>
+<a href="/posts/">全部文章</a>
+｜<a href="/">回到首頁</a>
+</p>
+</body>
+</html>
