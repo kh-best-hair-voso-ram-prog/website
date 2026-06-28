@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+<meta charset="UTF-8">
+<title>文章列表 | {{ .Site.Title }}</title>
+</head>
+<body>
+<h1>美髮文章分享</h1>
+<ul>
+{{ range .Pages.ByDate.Reverse }}
+<li>
+<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+｜{{ .Date.Format "2006-01-02" }}
+</li>
+{{ end }}
+</ul>
+<p><a href="/">返回首頁</a></p>
+</body>
+</html>
