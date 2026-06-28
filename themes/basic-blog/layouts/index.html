@@ -39,20 +39,18 @@
     </script>
 
     <style>
-        :root { --gold: #a68a56; --dark: #111; --light: #f9f9f9; --text: #333; }
+        :root { --gold: #a68a56; --dark: #111; --light: #f9f9f9; --text: #333; --line: #00c300; }
         * { box-sizing: border-box; }
         html { scroll-behavior: smooth; }
         body { font-family: "PingFang TC", "Microsoft JhengHei", sans-serif; margin: 0; background: #fff; color: var(--text); line-height: 1.8; }
         
         nav { padding: 20px; text-align: center; border-bottom: 1px solid #eee; letter-spacing: 4px; font-weight: bold; position: sticky; top: 0; background: rgba(255,255,255,0.98); z-index: 1000; font-size: 1.1em; }
         
-        /* 📱 側邊欄固定按鈕 */
+        /* 側邊LINE按鈕 */
         .side-social { position: fixed; right: 10px; top: 50%; transform: translateY(-50%); z-index: 2000; display: flex; flex-direction: column; gap: 12px; }
         .social-group { background: rgba(255,255,255,0.95); padding: 10px 6px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border: 1px solid #eee; display: flex; flex-direction: column; align-items: center; gap: 6px; }
         .info-tag { font-size: 10px; font-weight: bold; color: #fff; background: var(--gold); padding: 2px 6px; border-radius: 4px; width: 100%; text-align: center; }
-        .info-detail { font-size: 9px; color: #666; text-align: center; line-height: 1.2; white-space: nowrap; }
-        .social-btn { width: 35px; height: 35px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); text-decoration: none; }
-        .social-btn img { width: 20px; height: 20px; }
+        .social-btn { width: 35px; height: 35px; background: var(--line); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); text-decoration: none; color:#fff; font-weight:bold; }
 
         .hero { background: #111; color: #fff; height: 35vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px; }
         .hero h1 { font-size: 2.2em; letter-spacing: 8px; margin: 0; font-weight: 300; }
@@ -67,7 +65,6 @@
         .store-card h3 { font-size: 1.2em; letter-spacing: 2px; }
         .line-btn { display: inline-block; background: #00c300; color: #fff; padding: 10px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 0.85em; margin-top: 10px; transition: 0.3s; }
 
-        /* 📸 作品集 & 團隊：最強比例與加載速度 */
         .section-title { text-align: center; letter-spacing: 8px; margin: 60px 0 40px; font-size: 1.4em; color: var(--gold); border-top: 1px solid #eee; padding-top: 60px; font-weight: bold; }
         .work-grid, .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
         .work-item, .team-item { text-align: center; overflow: hidden; border-radius: 4px; }
@@ -83,7 +80,6 @@
         .work-item img:hover { transform: scale(1.02); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
         .work-item p { margin-top: 15px; font-weight: bold; color: #444; letter-spacing: 1px; font-size: 0.95em; }
 
-        /* 文章區塊 */
         .article-grid-section { background: var(--light); padding: 80px 20px; }
         .blog-card { display: flex; background: #fff; margin: 0 auto 40px; max-width: 950px; border: 1px solid #eee; align-items: center; text-decoration: none; color: inherit; overflow: hidden; border-radius: 8px; transition: 0.4s; }
         .blog-card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
@@ -105,7 +101,7 @@
 </head>
 <body>
 
-    <nav>VOSO & RAM HAIR STUDIO</nav>
+    <nav>VOSO &amp; RAM HAIR STUDIO</nav>
 
     <header class="hero">
         <h1>DESIGN YOUR STYLE</h1>
@@ -115,13 +111,13 @@
     <main class="container">
         <section class="store-section">
             <div class="store-card">
-                <img src="images/5.jpg" alt="VOSO HAIR 左營裕誠店" loading="lazy">
+                <img src="/images/5.jpg" alt="VOSO HAIR 左營裕誠店" loading="lazy">
                 <h3>VOSO HAIR (裕誠店)</h3>
                 <p>📍 左營區裕誠路280號<br>📞 07-5507927</p>
                 <a href="https://line.me/R/ti/p/@vosohair" class="line-btn">LINE 線上預約</a>
             </div>
             <div class="store-card">
-                <img src="images/6.jpg" alt="RAM STUDIO 美術館店" loading="lazy">
+                <img src="/images/6.jpg" alt="RAM STUDIO 美術館店" loading="lazy">
                 <h3>RAM STUDIO (南屏店)</h3>
                 <p>📍 鼓山區南屏路266號<br>📞 07-5527286</p>
                 <a href="https://lin.ee/x5WtXZL" class="line-btn">LINE 線上預約</a>
@@ -130,35 +126,33 @@
 
         <h2 class="section-title">PORTFOLIO</h2>
         <div class="work-grid">
-            <div class="work-item"><img src="images/1.jpg" alt="高雄質感染髮" loading="lazy" decoding="async"><p>質感染髮色彩</p></div>
-            <div class="work-item"><img src="images/15.jpg" alt="高雄縮毛矯正一刀切" loading="lazy" decoding="async"><p>縮毛矯正一刀切</p></div>
-            <div class="work-item"><img src="images/11.jpg" alt="高雄男生燙髮" loading="lazy" decoding="async"><p>男生微分碎蓋</p></div>
-            <div class="work-item"><img src="images/3.jpg" alt="韓系紋理捲髮" loading="lazy" decoding="async"><p>韓系紋理捲髮</p></div>
-            <div class="work-item"><img src="images/14.jpg" alt="女生C字彎燙髮" loading="lazy" decoding="async"><p>C字彎弧度燙</p></div>
-            <div class="work-item"><img src="images/12.jpg" alt="潮男剪髮推薦" loading="lazy" decoding="async"><p>潮男個性狼尾</p></div>
+            <div class="work-item"><img src="/images/1.jpg" alt="高雄質感染髮" loading="lazy" decoding="async"><p>質感染髮色彩</p></div>
+            <div class="work-item"><img src="/images/15.jpg" alt="高雄縮毛矯正一刀切" loading="lazy" decoding="async"><p>縮毛矯正一刀切</p></div>
+            <div class="work-item"><img src="/images/11.jpg" alt="高雄男生燙髮" loading="lazy" decoding="async"><p>男生微分碎蓋</p></div>
+            <div class="work-item"><img src="/images/3.jpg" alt="韓系紋理捲髮" loading="lazy" decoding="async"><p>韓系紋理捲髮</p></div>
+            <div class="work-item"><img src="/images/14.jpg" alt="女生C字彎燙髮" loading="lazy" decoding="async"><p>C字彎弧度燙</p></div>
+            <div class="work-item"><img src="/images/12.jpg" alt="潮男剪髮推薦" loading="lazy" decoding="async"><p>潮男個性狼尾</p></div>
         </div>
 
         <h2 class="section-title">OUR TEAM</h2>
         <div class="team-grid">
-            <div class="team-item"><img src="images/7.jpg" alt="VOSO 專業設計團隊" loading="lazy"></div>
-            <div class="team-item"><img src="images/8.jpg" alt="RAM  職人造型團隊" loading="lazy"></div>
+            <div class="team-item"><img src="/images/7.jpg" alt="VOSO 專業設計團隊" loading="lazy"></div>
+            <div class="team-item"><img src="/images/8.jpg" alt="RAM  職人造型團隊" loading="lazy"></div>
         </div>
     </main>
 
     <section class="article-grid-section">
         <div class="section-title" style="margin-top:0; border:none;">HAIR ENCYCLOPEDIA</div>
-        <!-- Hugo 自動讀取所有文章列表 -->
         {{ range first 3 .Site.RegularPages.ByDate.Reverse }}
         <a href="{{ .RelPermalink }}" class="blog-card">
             <div class="blog-img">
                 {{ if .Params.thumbnail }}
-                <img src="images/{{ .Params.thumbnail }}" alt="{{ .Title }}" loading="lazy">
+                <img src="/images/{{ .Params.thumbnail }}" alt="{{ .Title }}" loading="lazy">
                 {{ else }}
-                <img src="images/9.jpg" alt="{{ .Title }}" loading="lazy">
+                <img src="/images/9.jpg" alt="{{ .Title }}" loading="lazy">
                 {{ end }}
             </div>
             <div class="blog-info">
-                <span class="category">{{ .Params.categories }}</span>
                 <h3>{{ .Title }}</h3>
                 <p>{{ .Summary }}</p>
                 <div class="read-more-btn">閱讀全文</div>
@@ -173,17 +167,17 @@
     <aside class="side-social">
         <div class="social-group">
             <div class="info-tag">VOSO</div>
-            <a href="https://line.me/R/ti/p/@vosohair" target="_blank" class="social-btn"><img src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" alt="LINE"></a>
+            <a href="https://line.me/R/ti/p/@vosohair" target="_blank" class="social-btn">LINE</a>
         </div>
         <div class="social-group">
             <div class="info-tag">RAM</div>
-            <a href="https://lin.ee/x5WtXZL" target="_blank" class="social-btn"><img src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" alt="LINE"></a>
+            <a href="https://lin.ee/x5WtXZL" target="_blank" class="social-btn">LINE</a>
         </div>
     </aside>
 
     <footer>
-        <p>© VOSO & RAM HAIR STUDIO. ALL RIGHTS RESERVED.</p>
-        <p>高雄美髮推薦｜左營裕誠路 & 鼓山南屏路</p>
+        <p>© VOSO &amp; RAM HAIR STUDIO. ALL RIGHTS RESERVED.</p>
+        <p>高雄美髮推薦｜左營裕誠路 &amp; 鼓山南屏路</p>
     </footer>
 
 </body>
