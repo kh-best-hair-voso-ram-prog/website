@@ -1,11 +1,9 @@
 title: 高雄短髮趨勢 | 2026 必剪的 3 款風格，圓臉/方臉/長臉專屬小臉剪裁
 date: 2026-06-29T08:00:00+08:00
+thumbnail: short-hair-cover.jpg
 draft: false
-resources:
-- src: short-hair-cover.jpg
-  name: card-thumb
 ---
-大家好，我們是高雄深耕多年的專業短髮設計師 ✂️ 累積上千位高雄客人真實改造案例，今天完整分享2026年全高雄最火的三款短髮，不分圓臉、方臉、長臉，都能找到專屬你的小臉剪裁，搭配門市真實客照直觀參考！
+大家好，我是高雄深耕多年的專業短髮設計師 ✂️ 累積上千位高雄客人真實改造案例，今天完整分享2026年全高雄最火的三款短髮，不分圓臉、方臉、長臉，都能找到專屬你的小臉剪裁，搭配門市真實客照直觀參考！
 
 <div style="display:grid; grid-template-columns: repeat(3,1fr); gap:12px;">
 <img src="/images/short-hair-cover.jpg" style="width:100%; border-radius:8px;" alt="短髮封面造型">
