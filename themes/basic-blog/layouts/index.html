@@ -123,9 +123,8 @@
         {{ range first 3 .Site.RegularPages.ByDate.Reverse }}
         <a href="{{ .RelPermalink }}" class="blog-card">
             <div class="blog-img">
-                {{ $cardImg := .Resources.GetMatch "card-thumb" }}
-                {{ if $cardImg }}
-                <img src="{{ $cardImg.RelPermalink }}" alt="{{ .Title }}" loading="lazy">
+                {{ if .Params.thumbnail }}
+                <img src="/images/{{ .Params.thumbnail }}" alt="{{ .Title }}" loading="lazy">
                 {{ else }}
                 <img src="/images/9.jpg" alt="{{ .Title }}" loading="lazy">
                 {{ end }}
