@@ -10,6 +10,8 @@ categories: ["美髮知識"]
 
 # 高雄美髮權威｜五大臉型適合髮型完整指南，選對髮型立刻小臉
 
+![五大臉型髮型指南封面](kaohsiung-face-type-hairstyle-guide-cover.png)
+
 很多人剪髮、燙髮時都有同樣困擾：看著網路上超好看的髮型，放到自己臉上完全不是一回事。
 問題不在髮型好不好看，而是**沒有依照自己臉型挑選**。
 
@@ -24,6 +26,7 @@ VOSO HAIR（左營裕誠）與 RAM HAIR STUDIO（美術館南屏），幫高雄�
 5. 鵝蛋臉：比例均勻，額頭略寬於下巴，理想臉型
 
 ## 圓臉｜目標：拉長視覺、縮短臉部寬度
+![圓臉適合髮型](kaohsiung-round-face-best-hairstyle.png)
 ✅適合髮型
 - 長層次剪、側分瀏海、八字瀏海
 - 中長髮微燙，髮尾帶點彈性，增加縱向線條
@@ -33,6 +36,7 @@ VOSO HAIR（左營裕誠）與 RAM HAIR STUDIO（美術館南屏），幫高雄�
 齊厚瀏海、貼頭皮短bob、兩側澎鬚髮，會讓臉看起來更圓
 
 ## 方臉｜目標：柔銳下頜棱角，增加柔和感
+![方臉適合柔和髮型](kaohsiung-square-face-soft-hairstyle.png)
 ✅適合髮型
 - 帶弧線的中長髮、S彎大波浪
 - 空氣瀏海、法式瀏海，用髮絲遮蓋下頜角
@@ -42,6 +46,7 @@ VOSO HAIR（左營裕誠）與 RAM HAIR STUDIO（美術館南屏），幫高雄�
 直齊一刀切短髮、厚重齊下巴bob，會強化臉部稜角
 
 ## 長臉｜目標：縮短臉長，增加臉部橫向澎度
+![長臉適合髮型](kaohsiung-long-face-hairstyle.png)
 ✅適合髮型
 - 齊瀏海、空氣瀏海，直接截斷臉長
 - 短bob、肩下澎鬚捲髮，增加兩側厚度
@@ -50,6 +55,7 @@ VOSO HAIR（左營裕誠）與 RAM HAIR STUDIO（美術館南屏），幫高雄�
 無瀏海黑長直、頂部過度增高的髮型，臉會顯得更長
 
 ## 菱形臉｜目標：修飾高顴骨，填補額頭與下巴髮量
+![菱形臉適合髮型](kaohsiung-diamond-face-hairstyle.png)
 ✅適合髮型
 - 有瀏海、顴骨位置帶層次的中長髮
 - 耳旁保留髮絲，軟化突出的顴骨
@@ -58,6 +64,7 @@ VOSO HAIR（左營裕誠）與 RAM HAIR STUDIO（美術館南屏），幫高雄�
 貼頭皮直髮、過短露耳髮型，顴骨會更加突出
 
 ## 鵝蛋臉｜萬能臉型，大部分髮型都駕馭
+![鵝蛋臉適合髮型](kaohsiung-oval-face-hairstyle.jpg)
 ✅適合：短髮、長髮、燙捲、直髮、各式瀏海幾乎都可以
 ⚠️小提醒：依照個人風格、髮質與日常整理習慣挑選，不用硬追不適合自己的流行款
 
@@ -77,10 +84,4 @@ VOSO HAIR 位於左營裕誠路，RAM HAIR STUDIO 在鼓山美術館南屏路。
 
 預約前可以先拍正面無修圖照，到店讓設計師幫你評估臉型，挑最適合你的專屬髮型。
 
-
-## 高雄VOSO HAIR & RAM HAIR｜預約諮詢
-{{< figure src="voso-ram-kaohsiung-contact-location.jpg" alt="門市資訊｜LINE、IG聯絡方式" >}}
-我們兩間門市皆可免費事前髮型諮詢，你可以傳照片預先討論適合自己臉型的髮型。
-📍VOSO HAIR SALON｜左營區裕誠路280號（巨蛋、瑞豐商圈）
-📍RAM HAIR STUDIO｜鼓山區南屏路266號（高雄美術館商圈）
-透過LINE線上諮詢，提前溝通，降低到店溝通落差。
+![文章結尾總圖](kaohsiung-face-type-summary-end.png)
