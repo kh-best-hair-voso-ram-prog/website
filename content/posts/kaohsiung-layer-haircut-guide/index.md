@@ -67,5 +67,6 @@ draft: false
 
 線上預約可透過IG訊息或粉專私訊，設計師會先評估你的臉型、髮質，量身設計適合你的層次髮型，也歡迎到Google商家頁面看更多客人真實髮型分享與評論。
 
-{{< img src="images/kaohsiung-layer-cut-01.png" alt="高雄層次剪髮女生中長髮層次 VOSO HAIR左營美髮" >}}
-{{< img src="images/kaohsiung-layer-cut-02.png" alt="高雄層次剪髮男生韓系層次 RAM HAIR鼓山美髮" >}}
+![高雄層次剪髮女生中長髮層次 VOSO HAIR左營美髮](images/kaohsiung-layer-cut-01.png)
+
+![高雄層次剪髮男生韓系層次 RAM HAIR鼓山美髮](images/kaohsiung-layer-cut-02.png)
