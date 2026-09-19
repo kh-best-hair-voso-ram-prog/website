@@ -3,6 +3,7 @@ title: 高雄層次剪髮攻略｜適合各臉型的層次髮型，修飾臉型�
 description: VOSO HAIR & RAM HAIR高雄設計師解析層次剪髮，圓臉、方臉、長臉、菱形臉適合層次髮型，高雄左營、鼓山剪髮推薦。
 keywords: 高雄層次剪髮,高雄剪髮,左營美髮,鼓山美髮,VOSO HAIR,RAM HAIR STUDIO,層次髮型,女生層次剪髮,男生層次剪髮
 date: 2026-09-19T10:00:00+08:00
+thumbnail: kaohsiung-layer-cut-01.png
 draft: false
 ---
 
@@ -68,5 +69,4 @@ draft: false
 線上預約可透過IG訊息或粉專私訊，設計師會先評估你的臉型、髮質，量身設計適合你的層次髮型，也歡迎到Google商家頁面看更多客人真實髮型分享與評論。
 
 ![高雄層次剪髮女生中長髮層次 VOSO HAIR左營美髮](images/kaohsiung-layer-cut-01.png)
-
 ![高雄層次剪髮男生韓系層次 RAM HAIR鼓山美髮](images/kaohsiung-layer-cut-02.png)
