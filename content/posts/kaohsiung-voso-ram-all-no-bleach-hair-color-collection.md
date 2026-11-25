@@ -4,6 +4,7 @@ date: 2026-11-25T16:00:00+08:00
 draft: false
 tags: ["高雄美髮沙龍","VOSO HAIR","RAM HAIR STUDIO","高雄免漂染髮","高雄復古玫瑰棕","高雄摩卡棕","高雄薄荷綠染髮","高雄酒紅染髮","左營染髮","鼓山美術館染髮","高雄男生染髮","高雄顯白髮色"]
 description: "高雄VOSO HAIR裕誠店、RAM HAIR STUDIO美術館店，免漂顯白髮色完整合集，包含復古玫瑰棕、摩卡棕、薄荷綠、勃艮第酒紅，適合台灣黃肌、小麥肌，附底色說明、髮色特色與門店預約資訊。"
+image: "/images/cover-7color-no-bleach.jpg"
 thumbnail: "/images/cover-7color-no-bleach.jpg"
 ---
 
